@@ -1,12 +1,12 @@
 # Programming in the Life Sciences
 ## Description
-Repository made in the context of a project for the Programming in the Life Sciences practical at the Maastricht Science Programme (Maastricht University). The goal is to retrieve data from the Wikidata SPARQL endpoint, analyze the results in JavaScript, and visualise them on a webpage using d3.js and HTML.
+Repository made in the context of a project for the Programming in the Life Sciences practical at the Maastricht Science Programme (Maastricht University). The goal is to retrieve data from the Wikidata SPARQL endpoint, analyze the results in JavaScript, and visualise them on a webpage using D3.js and HTML.
 ## Project Content
 ### Biological Question
-<ins>What is the global geographic and taxonomic distribution of *Panthera* genus?</ins>\
+<ins>What is the global geographic and taxonomic distribution of the *Panthera* genus?</ins>\
 The panthera genus, also known as big cats, is composed of Lions, Tigers, Leopards, Jaguars and Snow leopards. Their genus' name does not refer so much to their size as much as it does to their anatomical characteristics which allows them to roar, which other felids do not possess regardless of their size.\
-This question was chosen for a number of reasons. First of all it has the potential for an interesting and interactive website visualisation, it also seems, upon first thought, like a simple enough question to grasp and do data retrieval and coding visualisations for as a beginner.
-After reviewing the question, country counts seems to be at this stage too complicated to find data for, therefore the question will no longer have the numerical aspect of it.
+This question was chosen for a number of reasons. First of all it has the potential for an interesting and interactive website visualisation, it also seems, upon first thought, like a simple enough question to grasp and do data retrieval and coding visualisations for as a beginner.\
+After reviewing the question, country counts seems to be at this stage too complicated to find data for, therefore the question will no longer have the numerical aspect of it. Past question: What is the global geographic and taxonomic distribution of Panthera species, and how do their native country counts compare across continents?
 ### SPARQL queries
 So far I believe I will be needing three separate SPARQL queries, one finding the geographical distribution of the species, one giving me their numbers in each country, region or continent, depends on where I can find the best numbers, and one giving me the carrying sound bytes of each species.
 ## Project log
@@ -16,5 +16,7 @@ Tried a first SPRQL query to get the county distribution, but it only came up wi
 My next step was to try and add the missing statements in each entry, however given that these are highly searched entries they are partially protected from editing, which means that I have to wait until I have over 50 other edits and that my account is 4 days old. I spent the 2nd session making a number of those needed 50 edits on subspecies of the initial species until I could edit the bigger entry, and it worked because when I rerun my initial query I got 50 countries and multiple species in each, still not a complete dataset but closer. I hope that the half protected status of the entries will change so that I am able to get the necessary data for the question.
 ### Week 3
 Further editing of the Wikidata pages, I finally got access to the semi protected Wikidata entries such as lion, by the end of it my query gave me 127 entries, however I believe it included countries multiple times, once with the species name and then with the subspecies which is why I will have to change the query to filter them out or find a way to group the countries and subspecies, to be determined. I also created a first html file, tested an extremely basic layout and inout some baselines.
+### Week 4
+Careful review of how to build a SPARQL query in order to figure out how to formulate my second query, however, after looking at the Wikidata items that should have given me an answer I have for the time being deleted this part from my initial research question due to a lack of data. Choice of D3.js visualisation, possible attempt at merging two together if not, it will be the zoom map animation. Upon running my SPARQL query I realised that all of my Wikidata entry modifications had been deleted, probably because someone thought it was a bot making them, which is why I undid those deletions and added self references to those entries' taxon range maps. Continued testing of html basics.
 ## License
 This project is licensed under the MIT License.
