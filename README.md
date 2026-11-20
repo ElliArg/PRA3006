@@ -3,9 +3,10 @@
 Repository made in the context of a project for the Programming in the Life Sciences practical at the Maastricht Science Programme (Maastricht University). The goal is to retrieve data from the Wikidata SPARQL endpoint, analyze the results in JavaScript, and visualise them on a webpage using d3.js and HTML.
 ## Project Content
 ### Biological Question
-<ins>What is the global geographic and taxonomic distribution of *Panthera* genus, and how do their native country counts compare across continents?</ins>\
+<ins>What is the global geographic and taxonomic distribution of *Panthera* genus?</ins>\
 The panthera genus, also known as big cats, is composed of Lions, Tigers, Leopards, Jaguars and Snow leopards. Their genus' name does not refer so much to their size as much as it does to their anatomical characteristics which allows them to roar, which other felids do not possess regardless of their size.\
 This question was chosen for a number of reasons. First of all it has the potential for an interesting and interactive website visualisation, it also seems, upon first thought, like a simple enough question to grasp and do data retrieval and coding visualisations for as a beginner.
+After reviewing the question, country counts seems to be at this stage too complicated to find data for, therefore the question will no longer have the numerical aspect of it.
 ### SPARQL queries
 So far I believe I will be needing three separate SPARQL queries, one finding the geographical distribution of the species, one giving me their numbers in each country, region or continent, depends on where I can find the best numbers, and one giving me the carrying sound bytes of each species.
 ## Project log
